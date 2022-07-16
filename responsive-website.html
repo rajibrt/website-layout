@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid tomato;
+        }
+
+        .tiger img {
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+
+        }
+
+        .container-two .split {
+            width: 50%;
+        }
+
+        /* Make image responsive inside */
+        .split img {
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .food {
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .food img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-two {
+                flex-direction: column-reverse;
+
+
+            }
+
+            .container-two .split {
+                width: 100%;
+            }
+
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width:700px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h2>My Responsive Website</h2>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpeg" alt="">
+    </section>
+    <section>
+        <h2>Two <Parts></Parts>
+        </h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/healty-food.webp" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger.jpeg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2>Multi Column</h2>
+        <div class="container">
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-1</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque natus dolore labore nam, quasi
+                    cumque, eius suscipit sed veritatis architecto nulla, eligendi animi nemo numquam repudiandae
+                    debitis quia quis harum.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-2</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Suscipit ab eius nam nulla labore quasi maiores error recusandae facere debitis? Suscipit soluta
+                    minima obcaecati ullam dignissimos nobis aut nam corporis, velit possimus similique numquam maxime
+                    debitis, unde officia.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-3</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Sint aut, sed aliquam eligendi consequuntur, quis ipsam dolorum sit et ea, dolorem placeat! Esse
+                    nulla distinctio similique ratione ipsam, explicabo est minus eveniet tenetur aliquam, cupiditate
+                    repellat eum nostrum?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-4</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Provident facere nihil quod? Officiis, eveniet ipsa. Architecto nobis fugiat quas facere alias,
+                    aliquam veniam ut consequatur laboriosam modi eius cupiditate velit quasi voluptate repudiandae
+                    incidunt impedit mollitia! Natus, ipsa!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-5</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Explicabo, rerum. Cupiditate rerum saepe, odit repellat ducimus, ipsam distinctio at in cum qui natus
+                    commodi ad quo. Odio labore ab nihil, sed quaerat perferendis qui corrupti esse ea earum?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-6</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Numquam a ab inventore quos distinctio dolor fugiat quod earum suscipit, temporibus blanditiis,
+                    corporis assumenda adipisci animi iure non dicta minima? Neque autem quibusdam maxime, voluptatem
+                    libero est iste consequatur.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-7</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Iste officiis exercitationem quae voluptates aliquam autem, deleniti illo modi, iusto nemo numquam id
+                    doloremque amet, ab harum esse hic veniam et nam eveniet! Doloremque distinctio autem labore quaerat
+                    quo.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-8</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Quidem illum tempore obcaecati rem! Ipsum, sint! Numquam, reprehenderit doloremque consequatur
+                    architecto laborum quibusdam nam? Laboriosam temporibus accusantium eum, voluptates nemo aspernatur.
+                    Aliquam eligendi quod nemo, eum repellat veniam maiores.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-9</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Velit quidem praesentium ratione. Explicabo, placeat asperiores totam, distinctio veniam a ad
+                    inventore beatae culpa accusamus optio ex quam pariatur fugit eum omnis accusantium, reprehenderit
+                    earum deserunt praesentium ea velit.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-10</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>In sit vel provident aliquam voluptas vero itaque dicta, magnam asperiores soluta harum, numquam
+                    laudantium doloremque, voluptate ut labore. Perspiciatis dolore nulla porro quaerat delectus rerum,
+                    perferendis dolorum aspernatur atque!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-11</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Ut animi quae perspiciatis doloremque quidem magnam officia magni rem tempore, maiores quos atque
+                    illo, ea minus perferendis impedit porro optio veritatis voluptas asperiores sunt placeat sed!
+                    Doloremque, quasi voluptates?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healty-food.webp" alt="">
+                <h2>Item-12</h2>
+                <h4>Price: 100 Tk.</h4>
+                <p>Dolores quas aspernatur corrupti ipsum nostrum quisquam, recusandae aliquid, consequatur pariatur rem
+                    maiores iusto est explicabo. Ipsa cum laborum eum, error, ut corporis ab, eius eos eaque sit quae
+                    facilis.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        1. Viewport meta tag
+        2. CSS Relative unit
+        3. Responsive Image (Fuid Image)
+        4. Body max-with and margin auto
+        5. Responsive split screen using flex (2 Column Section)
+        6. Grid responsive (multi column)
+        7. Responsive Menu (Bootstrap responsive)-- Future এ দেখানো হবে।
+     -->
+
+</body>
+
+</html>
